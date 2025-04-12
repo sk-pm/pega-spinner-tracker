@@ -1,0 +1,16 @@
+{
+    "name": "Pega Spinner Load Tracker",
+    "version": "1.0",
+    "description": "Tracks load time of spinners in Pega web apps",
+    "manifest_version": 3,
+    "permissions": ["scripting", "activeTab"],
+    "host_permissions": ["<all_urls>"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
+  
